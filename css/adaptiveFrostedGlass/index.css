@@ -1,0 +1,24 @@
+img {
+    position: fixed;
+}
+
+section {
+    position: absolute;
+    margin-top: 100px;
+    block-size: 100px;
+    /* background-color: indianred; */
+}
+
+.adaptive-glass {
+    --glass-light: 100%;
+    backdrop-filter: blur(40px);
+    background-color: hsl(0, 0%, var(--glass-light)/50%);
+    /* 
+hsl based coloring and @media(prefers-color-scheme) not working 
+is it due to chrome version
+*/
+
+    @media(prefers-color-scheme:dark) {
+        --glass-light: 0%;
+    }
+}

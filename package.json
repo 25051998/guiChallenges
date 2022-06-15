@@ -1,0 +1,20 @@
+{
+  "name": "guichallenges",
+  "version": "1.0.0",
+  "description": "practising ways to write better CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/25051998/guiChallenges.git"
+  },
+  "keywords": [],
+  "author": "codelearner109 <codelearner109+npm@gmail.com> (https://aditya-portfolio.pages.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/25051998/guiChallenges/issues"
+  },
+  "homepage": "https://github.com/25051998/guiChallenges#readme"
+}

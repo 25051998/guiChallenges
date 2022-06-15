@@ -1,0 +1,46 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
+/* 
+https://web.dev/css-scroll-snap/
+snap points where it stays in between scroll
+none : can stay at any place
+x mandatory : a little push will directly scroll to horizontally next 80-50
+y proximity : a greater push will directly scroll to horizontally next >80
+scroll container any time overflow:auto or overflow : scroll : a scroll container is created
+and scroll ports is the visible part of scroll ports
+
+*/
+/* 
+The snapport is the area of the scroll container to which the snap areas are aligned. 
+By default, it is the same as the visual viewport of the scroll container, but it can be adjusted using the scroll-padding property.
+*/
+/* 
+attribute dir="ltr|rtl|auto"
+ltr : standard english
+rtl : urdu
+auto : detect font format and gives rtl,ltr accordingly
+*/
+/* 
+bdo : bidirectional text override
+did not understand point of bdo
+*/
+/* 
+depending upon writing-mode : horizontal-tb, vertical-rl, vertical-lr, 
+This property specifies the block flow direction, which is the direction in which block-level containers are stacked, and the direction in which inline-level content flows within a block container
+blocks and text will flow vertically
+defined over root element
+*/
+/* 
+block-size 
+depending on writing mode defines either height or width
+*/
+section {
+    block-size: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    display: grid;
+    place-items: center;
+}
